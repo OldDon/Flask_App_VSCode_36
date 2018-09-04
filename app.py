@@ -30,8 +30,4 @@ def hello_there(name):
 
 content = "<strong>Hello there, " + name + "!</strong> It's " + formatted_now
 
-return render_template(
-    "hello_there.html",
-    title='Hello, Flask',
-    content = content
-    )
+return render_template("hello_there.html", title='Hello, Flask', content = content)
